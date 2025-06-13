@@ -1,0 +1,7 @@
+<h2>User {{ userId }} Todos</h2>
+
+<ul>
+  <li *ngFor="let todo of todos" [class.completed]="todo.completed">
+    {{ todo.title }}
+  </li>
+</ul>

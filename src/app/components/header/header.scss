@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #2a5383, #335a81);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 8px 8px;
+
+  .left a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #09ff00;
+      text-shadow: 0 0 8px #15ff00e5;
+    }
+  }
+
+  .right {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 0.85;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+
+    .left a {
+      font-size: 1.2rem;
+    }
+
+    .right {
+      font-size: 0.9rem;
+    }
+  }
+}
